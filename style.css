@@ -1,0 +1,139 @@
+#main_menu{
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+.logo_area{
+   position: fixed;
+   left: 47%;
+   padding-right: 0px;
+    margin-top: -10px;
+    z-index: 3;
+
+}
+
+.inner_main_menu {
+margin: 0 auto;
+width: 1600px;
+position: fixed;
+background-color: rgb(0, 0, 0);
+margin-right: auto;    
+margin-left: auto;    
+max-width: 100%;    
+min-width: 500px;
+box-shadow: 0 5px 4px 0 rgba(71, 70, 70, 0.575);
+}
+
+.inner_main_menu ul{
+    
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+    
+}
+
+.inner_main_menu ul li{
+    float: none;
+    display: inline-block;
+}
+
+.inner_main_menu ul li:nth-child(1){
+    position:relative;
+    float:left;
+}
+.inner_main_menu ul li:nth-child(2){
+    position:relative;
+    float: left;
+}
+
+.inner_main_menu ul li a{
+    color: rgb(179, 179, 179);
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+}
+
+.inner_main_menu ul li a:hover{
+    opacity: 30%;
+}
+
+
+.about_container{
+    max-width: 1500px;
+    margin: 0 auto;
+    background: #ffffff;
+    font-size: 24px;
+    padding: 25px;
+}
+.about_parallax{
+    background: url('chicago.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 700px;
+}
+#about{
+    text-align: center;
+}
+.resume_container{
+    max-width: 1500px;
+    margin: 0 auto;
+    background: #ffffff;
+    font-size: 24px;
+    padding: 25px;
+}
+.resume_parallax{
+    background: url('fsu.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 300px;
+    
+}
+#resume{
+    text-align: center;
+    position: relative;
+    top:-200px;
+    z-index: 1;
+}
+.work_container{
+    max-width: 1500px;
+    margin: 0 auto;
+    background: #ffffff;
+    font-size: 24px;
+    padding: 25px;
+}
+.work_parallax{
+    background: url('fsu.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 300px;
+    
+}
+#work{
+    text-align: center;
+    position: relative;
+    top:-200px;
+    z-index: 1;
+}
+.contact_container{
+    max-width: 1500px;
+    margin: 0 auto;
+    background: #ffffff;
+    font-size: 24px;
+    padding: 25px;
+}
+.contact_parallax{
+    background: url('fsu.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 300px;
+    
+}
+#contact{
+    text-align: center;
+    position: relative;
+    top:-200px;
+    z-index: 1;
+}
