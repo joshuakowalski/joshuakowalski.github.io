@@ -29,7 +29,7 @@
 
 .inner_main_menu {
 margin: 0 auto;
-width: 1600px;
+width: 2500px;
 position: fixed;
 background-color: rgb(0, 0, 0);
 margin-right: auto;    
@@ -84,7 +84,7 @@ box-shadow: 0 5px 4px 0 rgba(71, 70, 70, 0.575);
     padding: 25px;
 }
 .about_parallax{
-    background: url('chicago.jpg') no-repeat center;
+    background: url('assets/chicago.jpg') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 700px;
@@ -100,7 +100,7 @@ box-shadow: 0 5px 4px 0 rgba(71, 70, 70, 0.575);
     padding: 25px;
 }
 .resume_parallax{
-    background: url('fsu.jpg') no-repeat center;
+    background: url('assets/fsu.jpg') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 300px;
@@ -120,7 +120,7 @@ box-shadow: 0 5px 4px 0 rgba(71, 70, 70, 0.575);
     padding: 25px;
 }
 .work_parallax{
-    background: url('fsu.jpg') no-repeat center;
+    background: url('assets/fsu.jpg') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 300px;
@@ -140,7 +140,7 @@ box-shadow: 0 5px 4px 0 rgba(71, 70, 70, 0.575);
     padding: 25px;
 }
 .contact_parallax{
-    background: url('fsu.jpg') no-repeat center;
+    background: url('assets/fsu.jpg') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 300px;
