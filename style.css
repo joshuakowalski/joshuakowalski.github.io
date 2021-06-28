@@ -1,68 +1,71 @@
-*{
+* {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
-#main_menu{
+#main_menu {
     width: 100%;
     position: relative;
     z-index: 2;
 }
-.logo_area{
-   position: fixed;
-   left: 47%;
-   padding-right: 0px;
+
+.logo_area {
+    position: fixed;
+    left: 47%;
+    padding-right: 0px;
     margin-top: -10px;
     z-index: 3;
-
 }
 
-.scroll{
+.logo_area:hover {
+    opacity: 30%;
+}
+
+.scroll {
     position: absolute;
-   left: 47%;
-   padding-right: 0px;
-    margin-top: -10px;
+    left: 47%;
+    padding-right: 0px;
+    margin-top: -50px;
     z-index: 1;
-    max-width: 10px;
+    max-width: 150px;
     top: 600px;
-    
 }
 
 .inner_main_menu {
-margin: 0 auto;
-width: 2500px;
-position: fixed;
-background-color: rgb(0, 0, 0);
-margin-right: auto;    
-margin-left: auto;    
-max-width: 100%;    
-min-width: 10px;
-box-shadow: 0 5px 4px 0 rgba(71, 70, 70, 0.575);
+    margin: 0 auto;
+    width: 2500px;
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+    min-width: 10px;
+    box-shadow: 0 5px 4px 0 rgba(71, 70, 70, 0.575);
 }
 
-.inner_main_menu ul{
-    
+.inner_main_menu ul {
     margin: 0;
     padding: 0;
     list-style: none;
     text-align: right;
-    
 }
 
-.inner_main_menu ul li{
+.inner_main_menu ul li {
     float: none;
     display: inline-block;
 }
 
-.inner_main_menu ul li:nth-child(1){
-    position:relative;
-    float:left;
-}
-.inner_main_menu ul li:nth-child(2){
-    position:relative;
+.inner_main_menu ul li:nth-child(1) {
+    position: relative;
     float: left;
 }
 
-.inner_main_menu ul li a{
+.inner_main_menu ul li:nth-child(2) {
+    position: relative;
+    float: left;
+}
+
+.inner_main_menu ul li a {
     color: rgb(179, 179, 179);
     font-size: 20px;
     text-transform: uppercase;
@@ -71,103 +74,150 @@ box-shadow: 0 5px 4px 0 rgba(71, 70, 70, 0.575);
     padding: 10px 20px;
 }
 
-.inner_main_menu ul li a:hover{
+.inner_main_menu ul li a:hover {
     opacity: 30%;
 }
 
-
-.about_container{
+.about_container {
     max-width: 1500px;
     margin: 0 auto;
     background: #ffffff;
     font-size: 24px;
-    padding: 25px;
 }
-.about_parallax{
+
+.about_parallax {
     background: url('assets/chicago.jpg') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 700px;
 }
-#about{
+
+#about {
     text-align: center;
     font-size: 50px;
     color: rgb(141, 141, 141);
 }
-.resume_container{
+
+.resume_container {
     max-width: 1500px;
     margin: 0 auto;
     background: #ffffff;
     font-size: 24px;
-    padding: 25px;
 }
-.resume_parallax{
+
+.resume_parallax {
     background: url('assets/fsu.jpg') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 300px;
-    
 }
-#resume{
+
+#resume {
     text-align: center;
     position: relative;
-    top:-200px;
+    top: -200px;
     z-index: 1;
     font-size: 50px;
     color: rgb(141, 141, 141);
     background-color: rgb(0, 0, 0);
     max-width: 200px;
-    
+    opacity: 70%;
 }
-.work_container{
+
+.work_container {
     max-width: 1500px;
     margin: 0 auto;
     background: #ffffff;
     font-size: 24px;
-    padding: 25px;
 }
-.work_parallax{
-    background: url('assets/work.jpeg') no-repeat center;
+
+.work_parallax {
+    background: url('assets/work.png') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 300px;
-    
 }
-#work{
+
+#work {
     text-align: center;
     position: relative;
-    top:-200px;
+    top: -200px;
     z-index: 1;
     font-size: 50px;
     color: rgb(141, 141, 141);
     background-color: rgb(0, 0, 0);
-    max-width: 200px;
-    
+    max-width: 150px;
+    opacity: 70%;
 }
-.contact_container{
+
+.contact_container {
     max-width: 1500px;
     margin: 0 auto;
     background: #ffffff;
     font-size: 24px;
-    padding: 25px;
 }
-.contact_parallax{
-    background: url('assets/social.png') no-repeat center;
+
+.contact_parallax {
+    background: url('assets/social.jpeg') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 300px;
 }
-#contact{
+
+#contact {
     text-align: center;
     position: relative;
-    top:-200px;
+    top: -200px;
     z-index: 1;
     font-size: 50px;
     color: rgb(141, 141, 141);
     background-color: rgb(0, 0, 0);
     max-width: 200px;
+    opacity: 70%;
 }
-.socials{
+
+.socials {
+    position: relative;
+    text-align: center;
+}
+
+@media only screen and (max-device-width: 1366px) {
+    .about_parallax {
+        background-attachment: scroll;
+    }
+    .resume_parallax {
+        background-attachment: scroll;
+    }
+    .work_parallax {
+        background-attachment: scroll;
+    }
+    .contact_parallax {
+        background-attachment: scroll;
+    }
+}
+
+.face {
+    position: relative;
+    left: -115px;
+}
+
+.about_text {
+    text-align: center;
+    font-size: 20px;
+    font-family: Courier New, monospace;
+}
+
+.resume_link {
+    text-align: center;
+    font-family: Courier New, monospace;
+}
+
+.work_text {
+    text-align: center;
+    font-family: Courier New, monospace;
+}
+
+.notesapp {
     position: relative;
     text-align: center;
 }

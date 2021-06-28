@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joshua Kowalski</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/jk_logo.png">
 </head>
 
 <body>
@@ -28,6 +29,7 @@
     <div class="logo_area">
         <a href=""><img src="assets/jk_logo.png" alt=""></a>
     </div>
+
     <div class="scroll">
         <a href="#about_parallax"><img src="assets/newest.gif" alt=""></a>
     </div>
@@ -38,21 +40,21 @@
         <div id="about_parallax"></div>
 
         <h2 id="about">About Me</h2>
-        <p>
+        <p class="face">
             <img src="assets/face.JPG">
         </p>
-        <p>
-            Hello, im Josh. Living in Chicago and currently a Junior studying Computer Science at Florida State
-            University.
+        <p class="about_text">
+            Hi, I'm Josh. I am currently a Junior studying Computer Science at Florida State University. I am from the Chicago metropolitain area.
         </p>
     </div>
+
     <!-- Resume Container -->
     <div class="resume_container">
         <div id="resume_parallax"></div>
         <div class="resume_parallax"></div>
 
         <h2 id="resume">Resume</h2>
-        <p>Click to view my resume <a href="assets/JoshuaKowalski_Resume.pdf" target="_blank">here</a>.</p>
+        <p class="resume_link">Click to view my resume <a href="assets/JoshuaKowalski_Resume.pdf" target="_blank">here</a>.</p>
     </div>
 
     <!-- Work Container -->
@@ -61,17 +63,12 @@
         <div class="work_parallax"></div>
 
         <h2 id="work">Work</h2>
-        <p>
-            Filler
+        <p class="notesapp">
+            <img src="assets/notesapp.png">
         </p>
-        <p>
-            Filler
-        </p>
-        <p>
-            Filler
-        </p>
-        <p>
-            Filler
+        <p class="work_text">
+            WIP Daily Progress Tracking iPhone App.
+            <br>* More work coming soon... *
         </p>
     </div>
 
@@ -84,15 +81,42 @@
 
         <div class="socials">
             <p>LinkedIn:</p>
-            <p><a href="https://www.linkedin.com/in/joshuakowalski/" target="_blank">
+            <p>
+                <a href="https://www.linkedin.com/in/joshuakowalski/" target="_blank">
                     <img src="assets/linklogo.png" alt="github" width="125" height="132">
-                </a></p>
+                </a>
+            </p>
             <p>Github Repository:</p>
-            <p></p><a href="https://github.com/joshuakowalski/joshuakowalski.github.io" target="_blank">
+            <p></p>
+            <a href="https://github.com/joshuakowalski/joshuakowalski.github.io" target="_blank">
                 <img src="assets/gitlogo.png" alt="github" width="125" height="132">
-            </a></p>
+            </a>
+            </p>
         </div>
     </div>
+
+    <!-- Flyby Script-->
+    <script>
+        let didScroll = false;
+        let paralaxTitles = document.querySelectorAll('.face');
+
+        const scrollInProgress = () => {
+            didScroll = true
+        }
+
+        const raf = () => {
+            if (didScroll) {
+                paralaxTitles.forEach((element, index) => {
+                    element.style.transform = "translateX(" + window.scrollY / 15 + "%)"
+                })
+                didScroll = false;
+            }
+            requestAnimationFrame(raf);
+        }
+        requestAnimationFrame(raf);
+        window.addEventListener('scroll', scrollInProgress)
+    </script>
+
 </body>
 
 </html>
